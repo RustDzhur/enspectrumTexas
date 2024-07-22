@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "Rajdhani-Regular";
+	src: url("/fonts/Rajdhani-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Rajdhani-Medium";
+	src: url("/fonts/Rajdhani-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Rajdhani-Bold";
+	src: url("/fonts/Rajdhani-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Rubik-Regular";
+	src: url("/fonts/Rubik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Rubik-Medium";
+	src: url("/fonts/Rubik-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Rubik-Bold";
+	src: url("/fonts/Rubik-Bold.ttf") format("truetype");
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	color: rgb(81, 82, 85); 
+}
+
+html,
+body {
+	font-family: "Rubik-Regular";
+	font-size: 16px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}

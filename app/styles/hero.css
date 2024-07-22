@@ -1,0 +1,109 @@
+.bg {
+	position: relative; /* Обеспечивает относительное позиционирование для использования абсолютного позиционирования псевдоэлемента */
+	background-image: url(../../public/images/hero/slide1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white; /* Устанавливаем белый цвет текста по умолчанию */
+	z-index: 0; /* Устанавливаем базовый уровень z-index */
+  }
+  
+  .bg::before {
+	content: "";
+	position: absolute; /* Абсолютное позиционирование */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Черный цвет с прозрачностью 50% */
+	z-index: -1; /* Отправляем псевдоэлемент позади содержимого, но впереди фонового изображения */
+  }
+
+.navigation {
+	background: #fff;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.logo {
+	width: 200px;
+	height: auto;
+}
+
+.linksContainer .link:not(:last-child){
+	margin-right: 50px;
+}
+
+.link {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.link:hover {
+	color:  rgb(74 171 61);
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-duration: .25s;
+}
+
+.quoteBtn {
+	padding: 15px 30px;
+	background-color: rgb(74 171 61);
+	border-radius: 15px;
+	color: #fff;
+}
+
+.quoteBtn:hover {
+	background-color: rgb(92 95 102);
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-duration: .25s;
+}
+
+.heroBtns{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.heroBtns .quoteBtn:not(:last-child) {
+	margin-right: 50px;
+}
+
+.title{
+	font-size: 70px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.subtitle{
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.subsubtitle{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.advantagesContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantagesIcon {
+	width: 150px;
+	height: auto;
+}
