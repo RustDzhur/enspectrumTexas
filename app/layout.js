@@ -1,5 +1,6 @@
 import "./styles/globals.css";
 import "./styles/hero.css";
+import "./styles/burger.css";
 
 export const metadata = {
 	title: "Enspectrum LLC",

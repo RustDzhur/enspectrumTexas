@@ -1,15 +1,15 @@
+/* Основные стили для фонового изображения */
 .bg {
 	position: relative; /* Обеспечивает относительное позиционирование для использования абсолютного позиционирования псевдоэлемента */
 	background-image: url(../../public/images/hero/slide1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 0 80px; /* Объединение padding-top и padding-bottom */
 	color: white; /* Устанавливаем белый цвет текста по умолчанию */
 	z-index: 0; /* Устанавливаем базовый уровень z-index */
-  }
-  
-  .bg::before {
+}
+
+.bg::before {
 	content: "";
 	position: absolute; /* Абсолютное позиционирование */
 	top: 0;
@@ -18,13 +18,14 @@
 	height: 100%;
 	background: rgba(0, 0, 0, 0.5); /* Черный цвет с прозрачностью 50% */
 	z-index: -1; /* Отправляем псевдоэлемент позади содержимого, но впереди фонового изображения */
-  }
+}
 
+/* Навигация */
 .navigation {
 	background: #fff;
 	border-radius: 20px;
 	padding: 20px;
-	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px,
 		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	display: flex;
 	justify-content: space-between;
@@ -37,67 +38,162 @@
 	height: auto;
 }
 
-.linksContainer .link:not(:last-child){
-	margin-right: 50px;
+.linksContainer {
+	display: flex;
+	gap: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+	.linksContainer {
+		display: none;
+	}
+}
+
+/* Бургер-меню стили */
+.burgerStyles {
+	display: flex;
+	align-items: center;
+}
+
+.burger-menu {
+	display: none;
+	cursor: pointer;
+}
+
+.burger-menu div {
+	width: 25px;
+	height: 3px;
+	background-color: #333;
+	margin: 5px 0;
+	transition: 0.4s;
+}
+
+/* Стили ссылок */
 .link {
 	font-size: 20px;
 	font-weight: 700;
 }
 
 .link:hover {
-	color:  rgb(74 171 61);
-	transition-timing-function: cubic-bezier(.4,0,.2,1);
-	transition-duration: .25s;
+	color: rgb(74, 171, 61);
+	transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Кнопка цитаты */
 .quoteBtn {
 	padding: 15px 30px;
-	background-color: rgb(74 171 61);
+	background-color: rgb(74, 171, 61);
 	border-radius: 15px;
 	color: #fff;
+	margin-left: 30px;
 }
 
 .quoteBtn:hover {
-	background-color: rgb(92 95 102);
-	transition-timing-function: cubic-bezier(.4,0,.2,1);
-	transition-duration: .25s;
+	background-color: rgb(92, 95, 102);
+	transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.heroBtns{
+@media screen and (max-width: 767px) {
+	.quoteBtn {
+		display: none;
+	}
+}
+
+/* Кнопка цитаты для героя */
+.quoteBtnHero {
+	padding: 15px 20px;
+	background-color: rgb(74, 171, 61);
+	border-radius: 15px;
+	color: #fff;
+	font-size: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+	.quoteBtnHero {
+		padding: 20px 35px;
+		font-size: 20px;
+	}
+}
+
+.quoteBtnHero:hover {
+	background-color: rgb(92, 95, 102);
+	transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.heroBtns {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 30px;
 	cursor: pointer;
 }
 
-.heroBtns .quoteBtn:not(:last-child) {
-	margin-right: 50px;
+.heroBtns .quoteBtnHero:not(:last-child) {
+	margin-right: 20px;
 }
 
-.title{
-	font-size: 70px;
-	font-weight: 700;
-	color: #fff;
-	text-align: center;
-	margin-bottom: 30px;
-}
-.subtitle{
-	font-size: 40px;
-	font-weight: 700;
-	color: #fff;
-	text-align: center;
-	margin-bottom: 30px;
-}
-.subsubtitle{
-	font-size: 30px;
-	font-weight: 700;
-	color: #fff;
-	text-align: center;
-	margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+	.heroBtns .quoteBtnHero:not(:last-child) {
+		margin-right: 50px;
+	}
 }
 
+/* Заголовки и подзаголовки */
+@media screen and (min-width: 375px) {
+	.title,
+	.subtitle,
+	.subsubtitle {
+		text-align: center;
+		margin-bottom: 30px;
+		font-weight: 700;
+	}
+
+	.title {
+		font-size: 24px;
+		color: #fff;
+	}
+
+	.subtitle {
+		font-size: 22px;
+	}
+
+	.subsubtitle {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.title {
+		font-size: 35px;
+		text-align: left;
+		color: #fff;
+	}
+
+	.subtitle {
+		font-size: 30px;
+		text-align: left;
+	}
+
+	.subsubtitle {
+		font-size: 20px;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.title {
+		font-size: 50px;
+	}
+
+	.subtitle {
+		font-size: 40px;
+	}
+
+	.subsubtitle {
+		font-size: 30px;
+	}
+}
+
+/* Контейнер преимуществ */
 .advantagesContainer {
 	display: flex;
 	justify-content: space-between;
@@ -106,4 +202,54 @@
 .advantagesIcon {
 	width: 150px;
 	height: auto;
+}
+
+@media screen and (min-width: 375px) {
+	.heroContent {
+		display: flex; /* Добавляем flexbox */
+		flex-direction: column; /* Размещаем элементы колонкой */
+		justify-content: center; /* Центрируем по горизонтали */
+		align-items: center; /* Центрируем по вертикали */
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.heroContent {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+}
+
+.heroLeftBlock {
+	width: 350px;
+}
+
+.heroRightBlock {
+	width: 350px;
+	background: #fff;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px,
+		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+@media screen and (min-width: 768px) {
+	.heroLeftBlock {
+		min-width: 300px;
+	}
+
+	.heroRightBlock {
+		min-width: 300px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.heroLeftBlock {
+		width: 500px;
+	}
+
+	.heroRightBlock {
+		width: 500px;
+	}
 }
