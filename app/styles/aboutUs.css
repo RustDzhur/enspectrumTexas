@@ -1,0 +1,98 @@
+@media screen and (min-width: 375px) {
+	.subtitleAboutUs {
+		font-size: 22px;
+		text-align: center;
+		margin-bottom: 30px;
+		font-weight: 700;
+		margin-bottom: 50px;
+	}
+	.aboutUsImage {
+		width: 100%;
+		height: auto;
+		margin-bottom: 40px;
+	}
+	.subsubtitleAboutUs {
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+	.descriptionAboutUs {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	.advantagesText {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.subtitleAboutUs {
+		font-size: 30px;
+	}
+	.subsubtitleAboutUs {
+		font-size: 38px;
+	}
+	.descriptionAboutUs {
+		font-size: 24px;
+	}
+	.advantagesText {
+		font-size: 24px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.subtitleAboutUs {
+		font-size: 40px;
+	}
+	.aboutUsImage {
+		width: 600px;
+		height: auto;
+		margin-bottom: 0;
+	}
+	.contentAboutUs {
+		display: flex;
+		gap: 30px;
+	}
+}
+
+.advantagesAboutUs {
+	display: flex;
+	align-items: center;
+}
+
+.advantagesAboutUsImage {
+	filter: invert(51%) sepia(94%) saturate(3645%) hue-rotate(341deg)
+		brightness(106%) contrast(102%);
+	width: 50px; /* Adjust the size as needed */
+	height: 50px;
+	margin-right: 20px;
+}
+
+.advantagesContainerAboutUs {
+    margin-bottom: 20px;
+}
+
+.advantagesContainerAboutUs .advantagesAboutUs:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.moreAboutUsBtn {
+	padding: 15px 20px;
+	background-color: rgb(74, 171, 61);
+	border-radius: 15px;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+	.moreAboutUsBtn {
+		padding: 20px 35px;
+		font-size: 20px;
+	}
+}
+
+.moreAboutUsBtn:hover {
+	background-color: rgb(92, 95, 102);
+	transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}

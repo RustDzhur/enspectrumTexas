@@ -1,6 +1,9 @@
 import "./styles/globals.css";
 import "./styles/hero.css";
 import "./styles/burger.css";
+import "./styles/whySolar.css"
+import "./styles/aboutUs.css"
+import "./styles/services.css"
 
 export const metadata = {
 	title: "Enspectrum LLC",

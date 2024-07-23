@@ -4,9 +4,10 @@
 	background-image: url(../../public/images/hero/slide1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 20px 0 80px; /* Объединение padding-top и padding-bottom */
+	padding: 40px 0 100px; /* Объединение padding-top и padding-bottom */
 	color: white; /* Устанавливаем белый цвет текста по умолчанию */
 	z-index: 0; /* Устанавливаем базовый уровень z-index */
+	margin-bottom: 35px;
 }
 
 .bg::before {
