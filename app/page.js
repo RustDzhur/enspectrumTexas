@@ -1,5 +1,7 @@
 import AboutUs from "@/components/aboutUs/AboutUs";
 import Hero from "@/components/hero/Hero";
+import HowItWorks from "@/components/howItWorks/HowItWorks";
+import OurSuccessfulProjects from "@/components/ourSuccessfulProjects/OurSuccessfulProjects";
 import Services from "@/components/services/Services";
 import WhySolar from "@/components/whySolar/WhySolar";
 
@@ -10,6 +12,8 @@ export default function Home() {
 			<WhySolar/>
 			<AboutUs/>
 			<Services/>
+			<HowItWorks/>
+			<OurSuccessfulProjects/>
 		</main>
 	);
 }

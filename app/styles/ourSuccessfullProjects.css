@@ -1,0 +1,21 @@
+@media screen and (min-width: 375px) {
+	.ourSuccessfulProjectsTitle {
+		font-size: 22px;
+		text-align: center;
+		margin-bottom: 30px;
+		font-weight: 700;
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.ourSuccessfulProjectsTitle {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.ourSuccessfulProjectsTitle {
+		font-size: 40px;
+	}
+}
