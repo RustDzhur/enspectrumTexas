@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectsSlider from "../slider/Slider";
 
 function OurSuccessfulProjects() {
 	return (
@@ -7,6 +8,7 @@ function OurSuccessfulProjects() {
 				<h2 className="ourSuccessfulProjectsTitle">
 					Our Successful Projects
 				</h2>
+				<ProjectsSlider/>
 			</div>
 		</div>
 	);
