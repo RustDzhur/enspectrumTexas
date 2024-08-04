@@ -41,7 +41,7 @@ function Services() {
 						<p className="servicesDescription">
 							Expert Consultations and Savings Calculations: Our specialists
 							provide personalized consultations to help you understand the
-							benefits of solar energy for your home. We'll perform a detailed
+							benefits of solar energy for your home. We`&apos;`ll perform a detailed
 							analysis of your energy usage and calculate potential savings. Our
 							goal is to give you a clear picture of how much you can save by
 							switching to solar power.

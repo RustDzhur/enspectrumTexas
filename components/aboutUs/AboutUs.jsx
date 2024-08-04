@@ -18,7 +18,7 @@ function AboutUs() {
 						<p className="descriptionAboutUs">
 							We are a company that started in the early 2000s in Ukraine. At
 							that time, it was difficult to buy solar panels, and they were
-							very expensive. That's why we ordered the components and made the
+							very expensive. That`&apos;`s why we ordered the components and made the
 							solar panels ourselves in our garage. As a result, we grew into a
 							major company in Ukraine, but the war forced us to relocate to
 							USA. Now we are starting from scratch, but with extensive
