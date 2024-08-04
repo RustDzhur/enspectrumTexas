@@ -40,7 +40,7 @@ import thirtyfour from "@/public/images/projects/34.jpg";
 import thirtyfive from "@/public/images/projects/35.jpg";
 import thirtysix from "@/public/images/projects/36.jpg";
 import thirtyseven from "@/public/images/projects/37.jpg";
-import thirtyeight from "@/public/images/projects/38.jpg";
+import thirtyeight from "@/public/images/projects/38.jpg"
 
 // Import Swiper styles
 import "swiper/css";
