@@ -7,6 +7,8 @@ import "./styles/services.css";
 import "./styles/howItWorks.css";
 import "./styles/ourSuccessfullProjects.css";
 import "./styles/projectsSlider.css";
+import "./styles/fqa.css";
+import "./styles/accordion.css";
 
 
 export const metadata = {

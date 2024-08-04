@@ -1,4 +1,5 @@
 import AboutUs from "@/components/aboutUs/AboutUs";
+import Fqa from "@/components/faq/Fqa";
 import Hero from "@/components/hero/Hero";
 import HowItWorks from "@/components/howItWorks/HowItWorks";
 import OurSuccessfulProjects from "@/components/ourSuccessfulProjects/OurSuccessfulProjects";
@@ -14,6 +15,7 @@ export default function Home() {
 			<Services/>
 			<HowItWorks/>
 			<OurSuccessfulProjects/>
+			<Fqa/>
 		</main>
 	);
 }

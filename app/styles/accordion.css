@@ -1,0 +1,43 @@
+/* src/components/Accordion.css */
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-button {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .accordion-button:after {
+    content: '\002B';
+    float: right;
+    font-size: 20px;
+  }
+  
+  .accordion-item .accordion-button.active:after {
+    content: '\2212';
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background-color: #fafafa;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+  
+  .accordion-content.show {
+    max-height: 200px; /* Large enough to fit the content */
+    padding: 15px;
+    transition: max-height 0.3s ease-in, padding 0.3s ease-in;
+  }
+  

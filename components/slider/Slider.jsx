@@ -105,27 +105,27 @@ export default function ProjectsSlider() {
 					modifier: 1,
 					slideShadows: true,
 				}}
-                breakpoints={{
-                375: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            }}
+				breakpoints={{
+					375: {
+						slidesPerView: 1,
+						spaceBetween: 10,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+					1200: {
+						slidesPerView: 3,
+						spaceBetween: 30,
+					},
+				}}
 				navigation={true}
 				autoplay={{ delay: 1000, disableOnInteraction: false }}
 				modules={[EffectCoverflow, Pagination]}
 				className="mySwiper">
-				{img.map((url, alt) => (
-					<SwiperSlide key={url}>
-						<Image src={url.url} alt={alt.alt} className="gallery"/>
+				{img.map((image, index) => (
+					<SwiperSlide key={index}>
+						<Image src={image.url} alt={image.alt} className="gallery" />
 					</SwiperSlide>
 				))}
 			</Swiper>
