@@ -15,6 +15,20 @@ export const metadata = {
 	title: "Enspectrum LLC",
 	description:
 		"Enspectrum LLC specializes in residential solar panel installations, providing customized solar solutions, professional installation, and ongoing maintenance to help homeowners reduce energy costs and embrace sustainable living.",
+	icons: [
+		{
+			rel: "icon",
+			type: "image/x-icon",
+			url: "/favicon.ico",
+			media: "(prefers-color-scheme: light)",
+		},
+		{
+			rel: "icon",
+			type: "image/svg",
+			url: "/favicon-dark.svg",
+			media: "(prefers-color-scheme: dark)",
+		},
+	],
 };
 
 export default function RootLayout({ children }) {
@@ -22,8 +36,8 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<Head>
 				<title>{metadata.title}</title>
-				<meta name="description" content={metadata.description} />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.ico" sizes="any"/>
+				<link rel="icon" href="/favicon-dark.svg" type="image/svg+xml"/>
 			</Head>
 			<body>{children}</body>
 		</html>
