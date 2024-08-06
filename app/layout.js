@@ -1,3 +1,4 @@
+import Head from "next/head";
 import "./styles/globals.css";
 import "./styles/hero.css";
 import "./styles/burger.css";
@@ -10,7 +11,6 @@ import "./styles/projectsSlider.css";
 import "./styles/fqa.css";
 import "./styles/accordion.css";
 
-
 export const metadata = {
 	title: "Enspectrum LLC",
 	description:
@@ -20,6 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
+			<Head>
+				<title>{metadata.title}</title>
+				<meta name="description" content={metadata.description} />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<body>{children}</body>
 		</html>
 	);
