@@ -10,7 +10,7 @@ import "./styles/ourSuccessfullProjects.css";
 import "./styles/projectsSlider.css";
 import "./styles/fqa.css";
 import "./styles/accordion.css";
-
+import favicon from "@/public/images/logo/favicon.svg"
 
 
 export const metadata = {
@@ -20,7 +20,7 @@ export const metadata = {
 	icons: [
 		{
 			type: "image/x-icon",
-			url: "../public/images/logo/favicon.svg",
+			url: {favicon},
 		},
 	],
 };
