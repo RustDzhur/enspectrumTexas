@@ -10,7 +10,7 @@ import "./styles/ourSuccessfullProjects.css";
 import "./styles/projectsSlider.css";
 import "./styles/fqa.css";
 import "./styles/accordion.css";
-import favicon from "@/public/images/logo/favicon.svg"
+import favicon from "@/public/images/logo/favicon.ico"
 
 
 export const metadata = {
